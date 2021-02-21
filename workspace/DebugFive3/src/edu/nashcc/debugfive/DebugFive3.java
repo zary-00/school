@@ -27,10 +27,10 @@ public class DebugFive3
       if(item <= LOW)
          output = "Item number too low";
       else
-        if(item >= HIGH)
+        if(item > HIGH)
           output = "Item number too high";
         else
-          if(item <= HIGH && item > CUTOFF) // invalid, need to figure in CUTOFF
+          if(item > LOW && item < CUTOFF)
              output = "Valid - in Automotive Department";
           else
              output = "Valid - Item in Housewares Department";
